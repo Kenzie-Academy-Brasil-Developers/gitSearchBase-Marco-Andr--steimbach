@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- FONTES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Git Search - User Not Found</title>
-  </head>
-  <body>
+  <!-- FONTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles/globalStyles.css" />
+  <link rel="stylesheet" href="/src/styles/reset.css" />
+  <link rel="stylesheet" href="/src/styles/error.css" />
 
-    <script type="module" src="../scripts/error.js"></script>
-  </body>
+  <title>Git Search - User Not Found</title>
+</head>
+
+<body>
+
+  <section class="section__ErrorMensage">
+
+    <div>
+      <h1 class="section__ErrorMensage__Information--Title">Ooops!</h1>
+      <h2 class="section__ErrorMensage__Information--information">Não encontramos o usuário que você procurou,<span class="section__ErrorMensage__Information--information--span">vamos tentar novamente.</span></h2>
+      <button class="section__ErrorMensage__Information--button" id="buttonReturnIndex">Nova Busca</button>
+    </div>
+
+    <div class="section__ErrorMensage__Img">
+      <img src="/src/assets/Danger.png" class="section__ErrorMensage__Img--img">
+    </div>
+
+  </section>
+
+  <script type="module" src="../scripts/error.js"></script>
+</body>
+
 </html>

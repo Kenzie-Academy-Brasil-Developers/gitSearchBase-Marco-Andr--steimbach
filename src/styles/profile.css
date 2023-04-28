@@ -1,0 +1,107 @@
+body {
+    background-color: var(--color-grey-2);
+}
+
+a {
+    text-decoration: none;
+}
+
+.sectionInformationUser {
+    display: flex;
+    justify-content: space-between;
+    margin: 3.813rem 20.5rem;
+}
+
+.sectionInformationUser__DivUserProfile {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.sectionInformationUser__DivUserProfile--imgUser {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: solid 3px var(--color-brand-1);
+}
+
+.sectionInformationUser__DivUserProfile--nameUser {
+    font-family: 'Inter';
+    color: var(--color-grey-7);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.sectionInformationUser__DivUserProfile--button {
+    width: 10.563rem;
+    height: 2.375rem;
+    color: var(--color-grey-7);
+    background: var(--color-grey-3);
+    border-radius: 8px;
+    margin-top: 1.313rem;
+    transition: 600ms;
+}
+
+.sectionInformationUser__DivUserProfile--button:hover {
+    background-color: var(--color-grey-4);
+}
+
+.sectionReposUser {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.sectionReposUser--divCard {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 23.813rem;
+    height: 15.188rem;
+    background-color: var(--color-grey-2);
+    border: solid 3px var(--color-grey-4);
+    border-radius: 8px;
+    transition: 600ms;
+}
+
+.sectionReposUser--divCard:hover {
+    background-color: var(--color-grey-1);
+    border: solid 3px var(--color-grey-7);
+}
+
+.sectionReposUser--nameRepos {
+    font-family: 'Inter';
+    color: var(--color-grey-7);
+    margin: 2.563rem 0rem 0rem 1.688rem;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.sectionReposUser--Information {
+    font-family: 'Inter';
+    color: var(--color-grey-6);
+    margin: 1.313rem 0.5rem 0rem 1.688rem;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.sectionReposUser--button {
+    width: 8rem;
+    padding: 1rem;
+    background-color: transparent;
+    color: var(--color-grey-7);
+    border: solid 2px var(--color-grey-7);
+    border-radius: 8px;
+    margin: 1.313rem 0rem 0rem 1.688rem;
+    transition: 600ms;
+    align-items: center;
+}
+
+.sectionReposUser--button:hover {
+    background-color: var(--color-brand-1);
+}
