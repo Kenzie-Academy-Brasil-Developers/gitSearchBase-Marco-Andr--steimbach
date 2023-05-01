@@ -68,8 +68,14 @@ function createRepos(obj) {
         let information = document.createElement("h2")
         let button = document.createElement("a")
 
-        name.innerText = obj.name
-        information.innerText = obj.description
+        name.innerText = obj.name;
+
+        if (obj.description === "" || obj.description === null) {
+            information.innerText = "Esse Repositório não possui descrição"
+        } else {
+            information.innerText = obj.description
+        }
+
         button.href = obj.html_url
         button.target = "_blank"
         button.innerText = `Repositório`
@@ -84,8 +90,8 @@ function createRepos(obj) {
         divMain.appendChild(button)
         repos.appendChild(divMain)
     })
-
 }
+
 
 searchUser(url)
 searchUserRepos(urlRepos)
